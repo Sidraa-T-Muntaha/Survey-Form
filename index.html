@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Website Evaluation Form</h1>
+        <p id="description" class="description text-center">
+          Help Us Make A Change
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>How Often Do You Visit Our Website</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="once-day">Once a day</option>
+            <option value="more-day">More than once a day</option>
+            <option value="once-week">Once a week</option>
+            <option value="once-month">Once in a month</option>
+            <option value="firstvisit">This is my first visit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How satistfied are you with our Website?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Very satistfied"
+              type="radio"
+              class="input-radio"
+              checked
+            />Very satistfied</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Very unsatisfied"
+              type="radio"
+              class="input-radio"
+            />Very unsatisfied</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Did you experience any probelm while using our Website</p>
+          <select id="user-experince" name="user-experince" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">No</option>
+            <option value="projects">Yes, improper formatting</option>
+            <option value="community">Poor front-end</option>
+            <option value="openSource">No sourceful content</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
